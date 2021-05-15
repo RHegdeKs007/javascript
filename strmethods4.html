@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <hgroup>
+            <h1>The slicing method</h1>
+        </hgroup>
+        <span id="demo"></span>
+
+        <script>
+            var res = "Apple , Banana , Chikku , Orange, Kiwi";
+
+            var sli = res.slice(7, 14);
+
+            var sli1 = res.slice(-12,-6);
+
+            var sli2 = res.slice(7);
+
+            var sli3 = res.slice(-12);
+
+            document.getElementById('demo').innerHTML = "<i>"+sli + "<br>"+ sli1+"<br>"+ sli2+ "<br>"+ sli3;
+        </script>
+
+
+
+    </body>
+</html>
