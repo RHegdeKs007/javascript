@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+
+        <button type="button" onclick="myfunction()">Click me!</button>
+        <p id="cse">"Please visit Microsoft and Microsoft!"</p>
+        <script>
+            function myfunction() {
+
+          
+            str =  document.getElementById('cse').innerHTML;
+            var n = str.replace(/Microsoft/g,"W3schools");
+
+            document.getElementById('cse').innerHTML = "<i><b>"+n
+            }
+           
+        </script>
+    </body>
+</html>
