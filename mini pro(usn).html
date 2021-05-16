@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: peachpuff;
+            }
+        </style>
+        <script type="text/javascript">
+            function validate_usn() {
+                var str = document.getElementById('usn');
+                var result = str.value.search(/^[1-4]{1}[A-Z]{2}\d{2}[A-Z]{2}\d{3}$/);
+                if(result!=0)
+                {
+                    alert("Entered usn is in invalid format");
+                }
+                else {
+                    alert("Entered usn("+str.value+") is in valid form");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form >
+            <label>Enter your USN:</label>
+            <input type="text" name="usn" id="usn" placeholder="Enter USN">
+           
+            <br>
+            <br>
+            <input type="submit" value="submit" onclick="validate_usn()">
+        </form>
+    </body>
+</html>

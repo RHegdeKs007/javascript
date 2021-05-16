@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: peachpuff;
+            }
+            form {
+                box-sizing: border-box;
+                border: 1px solid black;
+                margin: 100px 100px 0 100px;    
+                padding: 20px;
+                background-color:gold;
+            }
+           #sub,#res {
+               padding: 8px 16px;
+               color: white;
+               background-color:crimson ;
+           }
+           #sub:hover,#res:hover{
+               background-color: tomato;
+           }
+        h1{
+            text-align: center;
+            color: tomato;
+        }        
+           
+                
+        </style>
+        <script type="text/javascript">
+            function validate_usn() {
+                var str = document.getElementById('usn');
+                var res1 = str.value.search(/^[1-4]{1}[A-Za-z]{2}\d{2}[A-Za-z]{2}\d{3}$/);
+
+                var str1 = document.getElementById('sem');
+                var res2 = str1.value.search(/^[1-8]{1}$/);
+                if(res1>=0 && res2>=0)
+                {
+                    alert("Entered usn and sem are valid");
+                }
+                else if(res1<0 && res2>=0  ){
+                    alert("Entered usn is invalid");
+
+                }
+                else if(res1>=0 && res2<0 ){
+                    alert("Entered sem is invalid");
+                }
+                else {
+                    alert("Entered usn and sem are invalid form");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <hgroup><h1>Validating USN and Sem</h1></hgroup>
+        <form >
+            <label>Enter your USN:</label>
+            <input type="text" name="usn" id="usn" placeholder="Enter USN">
+            <br>
+            <br>
+            <label>Enter your Semester:</label>
+            <input type="text" name="sem" id="sem" placeholder="Enter Semester">
+            <br>
+            <br>
+            <input type="submit" id="sub" value="submit" onclick="validate_usn()">
+            <input type="reset" name="res" id="res">
+        </form>
+    </body>
+</html>
