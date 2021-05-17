@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            var cars = new Array("Supra","Dodge Challenger","chevy Imapala");
+            document.getElementById("demo").innerHTML = cars;
+
+            var name = cars[2];
+            document.getElementById("demo1").innerHTML = name;
+
+            cars[1] = "Rolls-Royce phantom";
+            document.getElementById('demo2').innerHTML = cars;
+        </script>
+    </body>
+</html>
