@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+            body{
+                background-color: salmon;
+        }
+        button {
+            background-color: sienna;
+            padding: 5px 12px;
+            text-align: center;
+
+        }
+       </style>
+    </head>
+    <body>
+        <p id="demo"></p>
+
+        <button onclick="myfruit()">Update</button>
+        <script>
+            var fruits = ["Apple","Banana","Orange","Mango"];
+            document.getElementById('demo').innerHTML = "list of fruits: "+fruits;
+
+            function myfruit() {
+                fruits.push("strawberry");
+
+                document.getElementById("demo").innerHTML = "updates list of fruits: "+fruits;
+            }
+        </script>
+
+    </body>
+</html>
