@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="numsort()">Sort Numerically</button>
+        <button onclick="alpsort()">Sort Alphabetically</button>
+        <p id="demo"></p>
+
+        <script>
+            var points = [40,100,1,5,25,10];
+            document.getElementById('demo').innerHTML = points;
+
+            function numsort() {
+                points.sort(function(a,b){return a - b });
+                document.getElementById('demo').innerHTML = points;
+            }
+            function alpsort() {
+                points.sort();
+                document.getElementById('demo').innerHTML = points;
+            }
+        </script>
+    </body>
+</html>
