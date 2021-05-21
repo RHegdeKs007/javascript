@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <hgroup><h1>Javascript array sort</h1></hgroup>
+
+        <button onclick="myfunction()">Click me!</button>
+
+        <p id="demo"></p>
+
+        <script>
+            var fruits = ["Banana","Orange","Apple","Mango"];
+
+            document.getElementById('demo').innerHTML = fruits;
+
+            function myfunction() {
+                fruits.sort();
+
+                document.getElementById('demo').innerHTML = fruits;
+            }
+        </script>
+    </body>
+</html>
