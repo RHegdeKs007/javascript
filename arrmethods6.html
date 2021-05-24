@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <hgroup><h2>Javascript Array Sort</h2></hgroup>
+
+        <p>The Highest number is: <span id="demo"></span></p>
+
+        <script>
+            var points = [40,101,1,500,25,10];
+
+            document.getElementById('demo').innerHTML = myArrayMax(points);
+
+            function myArrayMax(arr) {
+                return Math.max.apply(null,arr);
+            }
+        </script>
+
+    </body>
+</html>
