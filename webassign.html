@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function display() {
+                var i;
+                var row;
+                var result = "<table border='2' style='margin:auto'>";result = result +"<tr><th>Number</th><th>Square</th><th>Cube</th></tr>";
+                    for(i = 1; i<=10 ;i++)
+                    {
+                        row = "<tr><td>"+ i + "</td><td>" + i*i +"</td><td>" + i*i*i + "</td></tr>";
+                        result = result + row;
+
+                    }
+                    result = result + "</table>"; document.getElementById('squarecube').innerHTML = result;
+                
+            }
+        </script>
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+
+        <input type="button" value="Display square cube table" onclick="display()"/>
+        <br>
+        <br>
+        <br>
+        <div id="squarecube"></div>
+    </body>
+</html>
