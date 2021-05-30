@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+        var today, someday, text;
+        today = new Date();
+        someday = new Date();
+        someday.setFullYear(1969, 6, 16);
+
+        if (someday > today) {
+            text = "Today is before July 16, 1969.";
+        } else {
+            text = "Today is after July 16, 1969.";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>
