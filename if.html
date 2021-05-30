@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p id="demo"></p>
+        <script>
+            hour = new Date().getHours();
+
+            if (hour < 10) {
+                document.getElementById('demo').innerHTML ="Good Morning" ;
+            }
+            else if(hour < 17) {
+                document.getElementById('demo').innerHTML ="Good evening!" ;
+
+            }
+            else {
+                document.getElementById('demo').innerHTML = "Good night";
+            }
+        </script>
+    </body>
+</html>
