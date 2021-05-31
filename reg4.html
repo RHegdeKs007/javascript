@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a global search for digits in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var str = "Motivate urself to 100%";
+    var patt = /\d/g;
+    var result = str.match(patt);
+
+    document.getElementById('demo').innerHTML = result;
+}
+
+</script>
+
+</body>
+</html>
