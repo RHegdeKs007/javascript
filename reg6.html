@@ -6,7 +6,7 @@
     <p>
         Search for the characters<br>
         "LO"
-        <br>in the <strong>beginning</strong> of a word in the phrase:<br>
+        <br>in the <strong>end</strong> of a word in the phrase:<br>
         "HELLO, LOOK AT YOU!"
     </p>
 
@@ -14,7 +14,7 @@
 
     <script>
         var str = "HELLO, LOOK AT YOU!";
-        var patt1 = /\bLO/;
+        var patt1 = /LO\b/;
         var result = str.search(patt1);
         document.getElementById("demo").innerHTML = result;
     </script>
