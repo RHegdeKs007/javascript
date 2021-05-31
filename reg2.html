@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="myFunction()">Try this!</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+                var str = "\nIs th\nis it";
+                var patt = /^is/m;
+                var result = str.match(patt);
+
+                document.getElementById('demo').innerHTML = result;
+            }
+        </script>
+    </body>
+</html>
