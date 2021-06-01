@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            class Car {
+                constructor(name,year){
+                    this.name=name;
+                    this.year=year;
+                }
+            
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+        let mycar = new Car("Mustang",1984);
+
+        document.getElementById("demo").innerHTML = "My car is " + mycar.age() + " years old";
+        </script>
+    </body>
+</html>
