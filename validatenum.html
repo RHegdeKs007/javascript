@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>please input a number between 1 and 10</p>
+
+        <input id="num">
+
+        <button type="button" onclick="myFunction()">submit</button>
+       
+        <p id="demo"></p>
+
+        <script>
+            function myFunction() {
+                var x,text;
+
+                x = document.getElementById("num").value; 
+
+                if (isNaN(x)|| x < 1 || x > 10) {
+                    text= "invalid input";
+
+                }
+                else {
+                    text = "input ok";
+                }
+                document.getElementById("demo").innerHTML = text;
+            }
+        </script>
+    </body>
+</html>
