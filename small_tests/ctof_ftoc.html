@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ctof ftoc</title>
+    </head>
+    <body>
+        <hgroup><h3>convert Farenheit to Celsius</h3></hgroup>
+        <input type="text" id="celsius" placeholder="enter in F" >
+        <button onclick="toCelsius()">in Celsius</button><br>
+        <input type="text" id="faranheit" placeholder="enter in C" >
+        <button onclick="toFaranheit()">in Faranheit</button>
+        <p id="demo"></p>
+        <script>
+            
+            function toCelsius() {
+                var F=document.getElementById('celsius').value;
+                var C = parseInt((5/9 )*(F - 32));
+                document.getElementById("demo").innerHTML= C +" Celsius";
+            }
+            function toFaranheit() {
+                var C=document.getElementById('faranheit').value;;
+                var F= parseInt(((C * (9/5)) +32 ));
+                document.getElementById("demo").innerHTML= F +" Faranheit";
+            }
+            
+          
+        </script>
+    </body>
+</html>
