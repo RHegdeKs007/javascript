@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Increment & Decrement</title>
+    </head>
+    <body>
+        
+        <p id="demo"></p>
+        <button onclick="incr()">Increment</button>
+        <button onclick="decr()">Decrement</button>
+        <script>
+            var x = 50;
+            function incr() {
+                
+                x=Number(x)+1;
+                document.getElementById("demo").innerHTML = "Increment:  "+x;
+            }
+            function decr() {
+                x=Number(x)-1;
+                document.getElementById("demo").innerHTML = "Decrement:  "+x;
+            }
+            document.getElementById("demo").innerHTML = "Initial value  " + x;
+           
+        </script>
+    </body>
+</html>
