@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display current time</title>
+    </head>
+    <body>
+        <h2>Current time</h2>
+        <button onclick="currenttime()">Display current time</button>
+        <p id="demo"></p>
+
+        <script>
+            function currenttime(){
+                var y = new Date();
+            document.getElementById("demo").innerHTML = y.getHours()+ ":" +y.getMinutes()+ ":" + y.getSeconds() ;
+            }
+           
+        </script>
+    </body>
+</html>
