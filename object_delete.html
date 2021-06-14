@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <hgroup>
+            <h1>✖ Delete</h1>
+        </hgroup>
+        <p id="demo1"></p>
+        <p id="demo"></p>
+
+        <script>
+            const person = {
+                firstname: "John",
+                lastname: "Doe",
+                age:50,
+                eyecolor: "blue"
+            };
+            document.getElementById("demo1").innerHTML= person.firstname + " is " + person.age + " years old. ";
+            delete person.age;
+
+            document.getElementById("demo").innerHTML= person.firstname + " is " + person.age + " years old. ";
+        </script>
+    </body>
+</html>
