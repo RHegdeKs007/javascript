@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <script>
+          
+           
+            function sum(){
+                var x,y,res;
+                x = Number(document.getElementById('num1').value);
+                y = Number(document.getElementById("num2").value);
+                res= x+y;
+                  document.getElementById("demo").value = res;
+            }
+            function sub(){
+                var x,y,res;
+                x = Number(document.getElementById('num1').value);
+                y = Number(document.getElementById("num2").value);
+                res= x-y;
+                  document.getElementById("demo").value = res;
+            }
+            function mul(){
+                var x,y,res;
+                x = Number(document.getElementById('num1').value);
+                y = Number(document.getElementById("num2").value);
+                res= x*y;
+                  document.getElementById("demo").value = res;
+            }
+            function div(){
+                var x,y,res;
+                x = Number(document.getElementById('num1').value);
+                y = Number(document.getElementById("num2").value);
+                res= x/y;
+                  document.getElementById("demo").value = res;
+            }
+            function mod(){
+                var x,y,res;
+                x = Number(document.getElementById('num1').value);
+                y = Number(document.getElementById("num2").value);
+                res= x%y;
+                  document.getElementById("demo").value = res;
+            }
+        </script>
+    </head>
+    <body>
+        <hgroup><h2>Simple Calculator</h2></hgroup>
+        <form>
+            <label>Enter Num 1</label>
+            <input type="text" id="num1" > <br>
+            <label>Enter Num 2</label>
+            <input type="text" id="num2"><br>
+            <label>Answer  </label>
+            <input type="text" id="demo"><br>
+            <label>Sum:  </label>
+            <input type="radio" onclick="sum()" value="Sum" name="calc">
+            <label>Sub:  </label>
+            <input type="radio" onclick="sub()" value="Sub" name="calc">
+            <label>mul:  </label>
+            <input type="radio" onclick="mul()" value="multiply" name="calc">
+            <label>div:  </label>
+            <input type="radio" onclick="div()" value="div" name="calc">
+            <label>mod:  </label>
+            <input type="radio" onclick="mod()" value="mod" name="calc">
+         </form>
+        
+    </body>
+</html>
