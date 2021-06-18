@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      var person = {
+        firstName: "Paul",
+        lastName: "Oconner",
+        Movie: "Fast and Furious",
+      };
+      Object.defineProperty(person,"Movie",{
+          get : function() {return Movie},
+          set : function(value) {Movie = value.toUpperCase()}
+      });
+
+      person.Movie = "fast and furious";
+
+      Text = "";
+      for(var x in person){
+          Text+= person[x] + "<br>";
+      }
+
+      document.getElementById('demo').innerHTML = Text;
+    </script>
+  </body>
+</html>
