@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <hgroup><h2>JavaScript Promise</h2></hgroup>
+
+        <p>Wait 4 seconds </p>
+
+        <h1 id="demo"></h1>
+
+        <script>
+            const myPromise = new Promise(function(myResolve,myReject) {
+                setTimeout(function(){myResolve("I Love You 3000!");},4000);
+            });
+            myPromise.then(function(value){
+                document.getElementById('demo').innerHTML = value;
+            });
+        </script>
+    </body>
+</html>
