@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>If the input number is greater than 100 then print error overflow</p>
+
+    <input type="number" min="100" id="id1" required />
+    <button onclick="myFunction()">Validate</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        var text = "";
+        if (document.getElementById("id1").validity.rangeUnderflow) {
+          text = "Please give Larger number 😄  ";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>
