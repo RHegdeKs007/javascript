@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+ <body>
+     <p id="demo"></p>
+
+     <script>
+         function Person (firstName, lastName, age, hair) {
+             this.first = firstName;
+             this.last = lastName;
+             this.Age = age;
+             this.Hair= hair;
+         }
+         const Dad = new Person("Micheal","Morningstar",105,"Blue");
+
+         document.getElementById("demo").innerHTML = Dad.first;
+     </script>
+ </body>
+</html>
