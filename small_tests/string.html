@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function findSolution() {
+        findVowel();
+        reverseNumber();
+      }
+      function findVowel() {
+        var str1;
+        str1 = document.getElementById("str1").value;
+        var i, ch, index;
+        index = -1;
+        for (i = 0; i < str1.length; i++) {
+          ch = str1.charAt(i);
+          switch (ch) {
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+            case "A":
+            case "E":
+            case "I":
+            case "O":
+            case "U":
+              index = i;
+              break;
+          }
+          if (index != -1) break;
+        }
+        if (index == -1)
+          document.getElementById("result1").innerHTML = "Vowel not found";
+        else
+          document.getElementById("result1").innerHTML =
+            "Location of first vowel : " + index;
+      }
+
+      function reverseNumber() {
+        var str2;
+        str2 = document.getElementById("str2").value;
+        var i, ch, index, l;
+        index = -1;
+        var result2 = "";
+        l = str2.length;
+        for (i = 0; i < l; i++) result2 = result2 + str2.charAt(l - i - 1);
+        document.getElementById("result2").innerHTML =
+          "Number in reverse order : " + result2;
+      }
+    </script>
+  </head>
+  <body style="text-align: center">
+    <br />
+    <br />
+    <br />
+    String 1 :
+    <input type="text" id="str1" size="20" />
+    <br />
+    <br />
+    String 2 :
+    <input type="text" id="str2" size="20" />
+    <br />
+    <br />
+    <input type="button" value="Submit" onclick="findSolution()" /> <br />
+    <br />
+    <div id="result1"></div>
+    <br />
+    <br />
+    <div id="result2"></div>
+  </body>
+</html>
