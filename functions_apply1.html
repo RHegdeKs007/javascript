@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p id="demo"></p>
+
+        <script>
+            const person = {
+                fullName : function(city , country) {
+                    return this.fname + " " + this.lname + "," + city + ","+ country;
+                } 
+            }
+            const person1 = {
+                fname : "Mary",
+                lname : "Winchester"
+            }
+            document.getElementById("demo").innerHTML = 
+            person.fullName.apply(person1,["Shimla","Denmark"]);
+        </script>
+    </body>
+</html>
