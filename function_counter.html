@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p id="demo"></p>
+
+        <script>
+            let counter = 0;
+
+            function myFunction() {
+                counter+= 1;
+            }
+
+            myFunction();
+            myFunction();
+
+            document.getElementById("demo").innerHTML = "Counter value is : " + counter;
+        </script>
+    </body>
+</html>
