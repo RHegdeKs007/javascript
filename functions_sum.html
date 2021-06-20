@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <hgroup><h2>JavaScript Functions</h2></hgroup>
+
+        <p>Finding the sum</p>
+        <p id="demo"></p>
+
+        <script>
+            function sumAll() {
+                let sum = 0;
+                for(let i =0;i < arguments.length;i++){
+                    
+                        sum += arguments[i];
+                    
+
+                }return sum;
+            }
+            document.getElementById("demo").innerHTML = sumAll(50,549,789);
+        </script>
+
+    </body>
+</html>
