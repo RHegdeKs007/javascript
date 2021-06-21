@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <hgroup><h2>JS callbacks 🍬 </h2></hgroup>
+
+        <p>Do a calculation  and then display the result</p>
+
+        <p id="demo"></p>
+
+        <script>
+            function mysum(some) {
+                document.getElementById('demo').innerHTML = some;
+            }
+            function Calculator(num1,num2,mycallback) {
+                let sum= num1+num2;
+                mycallback(sum);
+            }
+            Calculator(8,8,mysum);
+        </script>
+    </body>
+</html>
