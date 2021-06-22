@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>Finding html elements by tag name</p>
+        <p>this example demonstrates the getelementbytagname method</p>
+        <p id="demo"></p>
+
+        <script>
+            const element = document.getElementsByTagName("p");
+
+            document.getElementById("demo").innerHTML = "The text" + element[0].innerHTML
+        </script>
+    </body>
+</html>
