@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>JS HTML DOM </h2>
+        <p>Adding a new element</p>
+
+        <section id="sect">
+            <span>This is paragraph</span>
+            <span>This is the second paragraph</span>
+        </section>
+
+        <script>
+            const para = document.createElement("span");
+            const node = document.createTextNode("This is a new paragraph craeted by node");
+            para.appendChild(node);
+            const element = document.getElementById("sect");
+            element.appendChild(para);
+        </script>
+    </body>
+</html>
