@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JS html DOM</h2>
+        <p>Hello WORLD!</p>
+        <P>HELLO INDIA</P>
+
+        <p id="demo"></p>
+
+        <script>
+            const myCollection = document.getElementsByTagName("p");
+
+            document.getElementById("demo").innerHTML = "The innerHTML of the second paragraph is:" + myCollection[1].innerHTML;
+        </script>
+
+    </body>
+</html>
