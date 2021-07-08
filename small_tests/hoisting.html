@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hoisting</title>
+    </head>
+    <body>
+        <hgroup><h3>Hoisting in JS</h3></hgroup>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <button onclick="mathh()">Click here</button>
+
+        <script>
+                x = 34;
+                
+                function mathh() {
+                    x = 7;
+                    document.getElementById("demo1").innerHTML = "My Fav number is: " + x; 
+                    var x;
+                }
+                document.getElementById("demo").innerHTML = x;
+                
+                 var x;
+            
+        </script>
+
+    </body>
+</html>
