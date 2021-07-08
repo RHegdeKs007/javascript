@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rest Parameter</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+      <script>
+        function sum(...args) {
+            let sum = 0;
+            for (let i of args) sum+= i;
+            return sum;
+        }
+        let x = sum(41,52,63,3,77,90,2,100);
+
+        document.getElementById('demo').innerHTML= x;
+    </script>
+      
+  </body>
+</html>
