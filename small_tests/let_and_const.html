@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let and Const</title>
+    </head>
+    <body>
+        <hgroup><h4>Let and Const</h4></hgroup>
+        <p>variables declared with let keyword cannot be redeclared</p>
+        <p>variables declared with const cannot be reassigned</p>
+
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+
+        <script>
+            let x = "Hello World";
+            document.getElementById("p1").innerHTML = x;
+
+           // let x= 40;
+            //document.getElementById("p2").innerHTML = x;
+
+            const y = 2.567;
+            document.getElementById("p3").innerHTML = y;
+
+            y = y+10;
+            document.getElementById("p4").innerHTML = y;
+
+        </script>
+
+    </body>
+</html>
