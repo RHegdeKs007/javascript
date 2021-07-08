@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Destructing Object</title>
+  </head>
+  <body>
+    <p>
+      It is similar to array destructuring except that instead of values being
+      pulled out of an array, the properties (or keys) and their corresponding
+      values can be pulled out from an object.
+    </p>
+    <p id="demo"></p>
+
+    <script>
+      var obj = { A: "Dead", B: "Shot" };
+      var { A, B } = obj;
+
+      document.getElementById("demo").innerHTML = A + B;
+    </script>
+  </body>
+</html>
